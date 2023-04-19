@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="surveyBody">
+
+        <div id="surveyMain">
+            <form action="" id="form">
+                <div id="surveyHead">
+                    <h4>User Survey Form</h4>
+                </div>
+                <div class="info" id="basicInfo">
+                    Name : <input type="text" name="userName" placeholder="User Name" required> <br> <br>
+                    Email : <input type="email" name="userEmail" placeholder="User Email" required>
+                </div>
+                <div class="info" id="mcqInfo">
+                    <div class="question">
+                        <p>Where is your country?</p>
+                        <select name="userCountry" id="userCountry">
+                            <option value="Asia">Asia</option>
+                            <option value="Africa">Africa</option>
+                            <option value="North America">North America</option>
+                            <option value="South America">South America</option>
+                            <option value="Europe">Europe</option>
+                        </select>
+                    </div>
+                    <div class="question">
+                        <p>What is your Gender?</p>
+                        <input type="radio" name="userGender" value="Male"> Male <br>
+                        <input type="radio" name="userGender" value="Female"> Female
+                    </div>
+                    <div class="question">
+                        <p>What is your Age Range?</p>
+                        <input type="radio" name="userAgeRange" value="0to6">00 to 06
+                        <input type="radio" name="userAgeRange" value="6to12">06 to 12 <br>
+                        <input type="radio" name="userAgeRange" value="12to16">12 to 16
+                        <input type="radio" name="userAgeRange" value="16to18">16 to 18 <br>
+                        <input type="radio" name="userAgeRange" value="18to21">18 to 21
+                        <input type="radio" name="userAgeRange" value="21to25">21 to 25 <br>
+                        <input type="radio" name="userAgeRange" value="25to30">25 to 35
+                        <input type="radio" name="userAgeRange" value="30to50">35 to 50 <br>
+                        <input type="radio" name="userAgeRange" value="50up">50 up
+                    </div>
+                    <div class="question">
+                        <p>Which on is your favorite?</p>
+                        <input type="radio" name="userFavorite" value="Mango">Mango <br>
+                        <input type="radio" name="userFavorite" value="Apple">Apple <br>
+                        <input type="radio" name="userFavorite" value="Banana">Banana <br>
+                        <input type="radio" name="userFavorite" value="Orange">Orange
+                    </div>
+                    <div class="question">
+                        <p>If possible, Which one do you want?</p>
+                        <input type="radio" name="userWant" value="Cricket Player">Cricket Player <br>
+                        <input type="radio" name="userWant" value="Football Player">Football Player <br>
+                        <input type="radio" name="userWant" value="Badminton Player">Badminton Player <br>
+                        <input type="radio" name="userWant" value="Tennis Player">Tennis Player
+                    </div>
+                    <div class="question">
+                        <p>Are you single?</p>
+                        <input type="radio" name="userRelation" value="haveWife"> No, I have wife <br>
+                        <input type="radio" name="userRelation" value="inRelationship"> No, I am in a relationship <br>
+                        <input type="radio" name="userRelation" value="single"> Yes, I am single
+                    </div>
+                </div>
+                <div class="info" id="inputInfo">
+                    <div class="question">
+                        <p>Submit your latest saved photo</p>
+                        <input type="file" name="userFile" accept="image/*">
+                    </div>
+                </div>
+                <div class="info" id="submitInfo">
+                    <input type="reset" id="reset">
+                    <input type="submit" id="submit">
+                </div>
+            </form>
+        </div>
+        <div id="surveyFooter"></div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
