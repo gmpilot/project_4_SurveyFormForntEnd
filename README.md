@@ -1,2 +1,2 @@
-# project_4_SurveyFormForntEnd
-This is a Survey Form Fornt End
+# project_4_SurveyFormFrontEnd
+This is a Survey Form Front End
